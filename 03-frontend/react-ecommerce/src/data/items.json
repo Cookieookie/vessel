@@ -1,0 +1,34 @@
+
+[
+    {
+        "id": 1,
+        "sku": "H20B-1000",
+        "name": "Stainless Steel Hydroflask",
+        "description": "Stainless Steel Standard Mouth Water Bottle with Flex Cap and Double-Wall Vacuum Insulation",
+        "unitPrice": 27.00,
+        "imageUrl": "images/hydroflask.jpg",
+        "active": 1,
+        "unitsInStock": 100
+    },
+
+    {
+        "id": 2,
+        "sku": "H20B-1001",
+        "name": "Owala FreeSip Stainless Steel",
+        "description": "Insulated Stainless Steel Water Bottle with Straw for Sports, Travel, and School BPA-Free Sports Water Bottle",
+        "unitPrice": 27.99,
+        "imageUrl": "images/owala.jpg",
+        "active": 1,
+        "unitsInStock": 100
+    },
+
+    {
+        "id": 3,
+        "sku": "H20B-1002",
+        "name": "AQUAFIT 1 Gallon Water Bottle with Time Marker",
+        "description": "Straw & Chug Lid - BPA Free Big Water Bottle with Straw - Gym Water Bottle with Handle",
+        "imageUrl": "images/aquafit.jpg",
+        "active": 1,
+        "unitsInStock": 100
+    }
+]
