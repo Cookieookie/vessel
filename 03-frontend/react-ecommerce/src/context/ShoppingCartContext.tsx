@@ -1,5 +1,4 @@
 import { createContext, useContext, ReactNode, useState } from "react";
-import { ShoppingCart } from "../components/ShoppingCart.tsx"
 
 type ShoppingCartProviderProps = {
     children: ReactNode
@@ -10,15 +9,19 @@ type CartItem = {
     quantity: number
 }
 
-type ShoppingCartContext = {
-    //4 functions - see item quantity, add/sub quantity of an item, fully remove item
+type ShoppingCartContextType = {
+    //5 functions - open cart, close cart, see item quantity, add/sub quantity of an item, fully remove item
+    openCart: () => void
+    closeCart: () => void
     getItemQuantity: (id: number) => number
-    increaseQuanitity: (id: number) => void
+    increaseQuantity: (id: number) => void
     decreaseQuantity: (id: number) => void
     removeFromCart: (id: number) => void
+    cartQuantity: number
+    cartItems: CartItem[]
 }
 
-const ShoppingCartContext  = createContext({} as ShoppingCartContext)
+const ShoppingCartContext  = createContext({} as ShoppingCartContextType)
 
 export function useShoppingCart() {
     return useContext(ShoppingCartContext)
@@ -26,7 +29,18 @@ export function useShoppingCart() {
 
 // Part that renders out all the code for shopping cart sidebar
 export function ShoppingCartProvider({ children } : ShoppingCartProviderProps) {
+    const [isOpen, setIsOpen] = useState(false)
     const [cartItems, setCartItems] = useState<CartItem[]>([])
+
+    const cartQuantity = cartItems.reduce(
+        (quantity, item) => item.quantity + quantity,
+        0
+    )
+
+    const openCart = () => setIsOpen(true)
+    const closeCart = () => setIsOpen(false)
+
+
    
    //function 1 - see item quantity
    function getItemQuantity(id: number) {
@@ -80,7 +94,11 @@ export function ShoppingCartProvider({ children } : ShoppingCartProviderProps) {
             getItemQuantity, 
             increaseQuantity, 
             decreaseQuantity, 
-            removeFromCart
+            removeFromCart,
+            cartItems,
+            cartQuantity,
+            openCart,
+            closeCart
             }}>
             { children }
         </ShoppingCartContext.Provider>
