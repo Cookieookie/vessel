@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar as NavbarBs } from 'react-bootstrap'; //differentiate Navbar from bootstrap Navbar
 import { NavLink } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import { useShoppingCart } from "../context/ShoppingCartContext";
+import { useShoppingCart } from "../context/ShoppingCartContext.tsx";
 
 
 export function Navbar() {
@@ -11,7 +11,7 @@ export function Navbar() {
         <NavbarBs sticky="top" className="bg-white shadow-sm mb-3">
             <Container>
 
-                
+
                 <Nav className="me-auto">
 
                     <Nav.Link to="/" as={NavLink}>
