@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 import { formatCurrency } from "../utilities/formatCurrency.tsx";
+import { useShoppingCart } from "../context/ShoppingCartContext.tsx";
 
 
 type StoreItemProps = {
@@ -15,7 +16,13 @@ type StoreItemProps = {
 export function StoreItem ({ id, sku, name, description, unitPrice, imageUrl}:StoreItemProps
 ) {
     // placeholder variable to test when cart is empty vs has items for checkout
-    const quantity = 2
+    const { 
+        getItemQuantity,
+        increaseQuantity,
+        decreaseQuantity,
+        removeFromCart 
+        } = useShoppingCart()
+    const quantity = 0
     return (
     
     <Card className="h-100">
