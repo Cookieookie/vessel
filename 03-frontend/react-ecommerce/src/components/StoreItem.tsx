@@ -22,7 +22,7 @@ export function StoreItem ({ id, sku, name, description, unitPrice, imageUrl}:St
         decreaseQuantity,
         removeFromCart 
         } = useShoppingCart()
-    const quantity = 0
+    const quantity = getItemQuantity(id)
     return (
     
     <Card className="h-100">
@@ -40,7 +40,7 @@ export function StoreItem ({ id, sku, name, description, unitPrice, imageUrl}:St
             </Card.Title>
             <div className="mt-auto">
                 {quantity === 0 ? (
-                        <Button className="w-100 btn-info">+ Add To Cart</Button>
+                        <Button className="w-100 btn-info" onClick={() => increaseQuantity(id)}>+ Add To Cart</Button>
                     ) : (
                         <div 
                             className="d-flex align-items-center flex-column" 
@@ -51,13 +51,15 @@ export function StoreItem ({ id, sku, name, description, unitPrice, imageUrl}:St
                             style={{ gap: ".5rem" }}
                         >
                         {/* Increase or Decrease quantitiy of item */}
-                            <Button>-</Button>
-                            <span className="fs-3"> {quantity} </span>
-                            <Button>+</Button>
+                            <Button onClick={() => decreaseQuantity(id)}>-</Button>
+                            <div>
+                                <span className="fs-3"> {quantity} </span>
+                            </div>
+                            <Button onClick={() => increaseQuantity(id)}>+</Button>
                         </div>
 
                         {/* Remove item from cart */}
-                            <Button variant="danger" size="sm">Remove</Button>
+                            <Button onClick={() => removeFromCart(id)} variant="danger" size="sm">Remove</Button>
 
                         </div>
                          )}
