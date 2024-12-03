@@ -30,7 +30,7 @@ export function StoreItem ({ id, sku, name, description, unitPrice, imageUrl}:St
         variant="top" 
         src= {imageUrl} 
         height="200px" 
-        style={{objectFit: "contain"}} 
+        style={{objectFit: "scale-down"}} 
         />
 
         <Card.Body className="d-flex flex-column">

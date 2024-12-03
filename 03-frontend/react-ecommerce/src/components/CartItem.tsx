@@ -2,6 +2,7 @@ import React from "react"
 import { useShoppingCart } from "../context/ShoppingCartContext.tsx"
 import storeItems from '../data/items.json'
 import { Stack } from "react-bootstrap"
+import { formatCurrency } from "../utilities/formatCurrency.tsx"
 
 type CartItemProps = {
     id: number
@@ -17,15 +18,20 @@ export function CartItem({id, quantity} : CartItemProps) {
         <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
             <img src={item.imageUrl} style={{ width:"125px", 
                                               height:"75px",
-                                              objectFit:"cover"}}
+                                              objectFit:"contain"}}
         />
         <div className="me-auto">
             <div>
-                {item.name}{" "}{quantity > 1 && (<span className="text-muted" style={{fontSize:".65rem"}}>
-                    {quantity}
+                {item.name} {" "} {quantity > 1 && (<span className="text-muted" style={{fontSize:".75rem"}}>
+                    x {quantity}
                 </span>
     )} 
             </div>
+
+            <div className = "text-muted" style={{ fontSize: ".75rem"}}>
+                {formatCurrency(item.unitPrice)}
+            </div>
+
         </div>
         </Stack>
     )
