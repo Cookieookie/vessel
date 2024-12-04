@@ -1,5 +1,5 @@
 import React from "react";
-import { Offcanvas, Stack } from "react-bootstrap";
+import { Offcanvas, Stack, Button } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext.tsx";
 import { CartItem } from "./CartItem.tsx";
 import storeItems from '../data/items.json'
@@ -14,7 +14,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
     return (
         <Offcanvas show={isOpen} onHide={closeCart} placement="end">
             <Offcanvas.Header closeButton>
-                <Offcanvas.Title>Cart</Offcanvas.Title>
+                <Offcanvas.Title> My Cart</Offcanvas.Title>
             </Offcanvas.Header>
 
             <Offcanvas.Body>
@@ -22,7 +22,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
                     {cartItems.map(item => (
                     <CartItem key={item.id} {...item}/>
                 ))}
-
+                {/* Shopping Total */}
                 <div className="ms-auto fw-bold fs-5">
                     Total {formatCurrency(cartItems.reduce((total, 
                         cartItem) => {
@@ -31,6 +31,12 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
                         }, 0)
                         )}
                 </div>
+
+                {/* Checkout items */}
+                <div className="text-center">
+                    <a className="btn btn-dark btn-lg" href="/Checkout">Checkout</a>
+                </div>
+
                 </Stack>
             </Offcanvas.Body>
         </Offcanvas>
