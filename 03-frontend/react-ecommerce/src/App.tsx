@@ -6,6 +6,7 @@ import { About } from './pages/About.tsx';
 import { Container } from 'react-bootstrap';
 import { Navbar } from './components/Navbar.tsx';
 import { ShoppingCartProvider } from './context/ShoppingCartContext.tsx';
+import { Checkout } from './pages/Checkout.tsx';
 
 function App() {
   return ( 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/About" element = {<About />} />
         <Route path="/" element = { <Home /> } />
         <Route path="/Store" element = {<Store />} />
+        <Route path="/Checkout" element = {<Checkout />} />
       </Routes>
     </Container>
   </ShoppingCartProvider>
