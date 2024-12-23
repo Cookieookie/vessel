@@ -68,9 +68,12 @@ export function Checkout() {
                             <input type ="text" className="form-control" id="zip"></input>
                         </div>
                     </div>
-
-                    <h2>add shipping address w/ checkbox later</h2>
-
+                    <hr class="mb-4"/>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="form-check-input" id="same-address"></input>
+                            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                        </div>
+                    <hr class="mb-4"/>
                     <div>
                         <h2>Payment</h2>
 
