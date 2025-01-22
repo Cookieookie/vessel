@@ -18,8 +18,8 @@ export function Slideshow() {
 
     const prevSlide = () => {
         setCurrentSlide(index => {
-            if (index === slideLength - 1) return 0
-            return index + 1
+            if (index === 0) return slideLength - 1
+            return index - 1
         })
     };
 
