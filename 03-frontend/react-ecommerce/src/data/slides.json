@@ -1,0 +1,17 @@
+[
+        {
+            "name": "First Promo Picture",
+            "imageURL": "images/promo_pic_1.jpg"
+        },
+
+        {
+            "name": "Second Promo Picture",
+            "imageURL": "images/promo_pic_2.jpg"
+        },
+
+        {
+            "name": "Third Promo Picture",
+            "imageURL": "images/promo_pic_3.jpg"
+        }
+
+    ]

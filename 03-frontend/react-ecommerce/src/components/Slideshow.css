@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.img-slider-btn:hover,
+.img-slider-btn:focus-visible {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.img-slider-btn > * {
+  stroke: rgb(213, 0, 0);
+  fill: black;
+  width: 2rem;
+  height: 2rem;
+}

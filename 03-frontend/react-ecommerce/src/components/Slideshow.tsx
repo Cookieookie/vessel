@@ -1,6 +1,7 @@
 import { useState } from "react";
 import  slides from "../data/slides.json"
 import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
+import "./Slideshow.css"
 import React from "react";
 
 
@@ -34,7 +35,7 @@ export function Slideshow() {
                     <div key={index}>
                         {index === currentSlide && (
                             <div>
-                            <img src={slide.imageURL} alt={slide.name} />
+                            <img src={slide.imageURL} alt={slide.name} className="slide-image" class="d block 100 mh-100"/>
                             </div>
                         )}
                     </div>
