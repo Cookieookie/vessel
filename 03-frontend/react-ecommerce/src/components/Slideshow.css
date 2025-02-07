@@ -1,17 +1,18 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.arrow-btn {
+    all: unset;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    cursor: pointer;
+    margin: auto;
+    width: 2rem;
+    height: 2rem;
 }
 
-.img-slider-btn:hover,
-.img-slider-btn:focus-visible {
-  background-color: rgb(0, 0, 0, 0.2);
-}
+.arrow-btn > * {
+    stroke: white;
+    fill: black;
 
-.img-slider-btn > * {
-  stroke: rgb(213, 0, 0);
-  fill: black;
-  width: 2rem;
-  height: 2rem;
 }

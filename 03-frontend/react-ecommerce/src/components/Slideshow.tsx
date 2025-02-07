@@ -25,10 +25,10 @@ export function Slideshow() {
     };
 
     return  (
-        <div className="Slider">
+        <div className="Slider" style={{ position: "relative" }}>
             {/* left & right buttons */}
-            <CiCircleChevLeft onClick={prevSlide} className="arrow prev" />
-            <CiCircleChevRight onClick={nextSlide} className="arrow next"/>
+            <CiCircleChevLeft onClick={prevSlide} className="arrow-btn" style= {{ left: 0 }} />
+            <CiCircleChevRight onClick={nextSlide} className="arrow-btn" style= {{ right: 0 }}/>
 
             {slides.map((slide, index) => {
                 return (
