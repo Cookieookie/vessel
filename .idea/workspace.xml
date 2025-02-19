@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3ed0878-5586-490e-8d05-329548afe81d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/common/product.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/common/product.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/components/product-list/product-list.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/components/product-list/product-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/components/product-list/product-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/components/product-list/product-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/services/product.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/app/services/product.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/angular-ecommerce/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/react-ecommerce/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/03-frontend/react-ecommerce/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/react-ecommerce/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/03-frontend/react-ecommerce/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-frontend/react-ecommerce/src/components/ProductList/ProductList.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ogfVUFPoUdB59EgkOG6jqlzL11" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "C:/Users/cooki/Desktop/vessel",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cooki\Desktop\vessel" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3ed0878-5586-490e-8d05-329548afe81d" name="Changes" comment="" />
+      <created>1731296164481</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731296164481</updated>
+    </task>
+    <servers />
+  </component>
+</project>
